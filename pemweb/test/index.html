@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .a-nav {
+        text-decoration: none;
+        color: white;
+      }
+
+      tr td {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body style="margin: auto">
+    <nav
+      style="
+        background-color: rgb(50, 50, 57);
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          font: 1.2rem bold;
+          justify-content: space-between;
+          align-items: center;
+          margin: auto 5rem;
+        "
+      >
+        <a class="a-nav" href="">Pemweb</a>
+
+        <div style="display: flex; gap: 2rem">
+          <a class="a-nav" href="#main">Home</a>
+          <a class="a-nav" href="#skill">Skill</a>
+        </div>
+      </div>
+    </nav>
+    <main id="main" style="margin: 4rem 0px 0px 5px; scroll-margin-top: 10rem">
+      <section
+        style="
+          margin: 5px auto 5px auto;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <div
+          style="
+            border-radius: 10rem;
+            border: 4px solid black;
+            width: 15rem;
+            height: 15rem;
+            background-size: cover;
+            background-position-y: 15px;
+            background-repeat: no-repeat;
+            background-image: url(./profile.svg);
+          "
+        ></div>
+
+        <div style="line-height: 0.5rem; text-align: center">
+          <p>Nama : Uray Muhammad Rajsyafiq</p>
+          <p>NPM : 23081010029</p>
+          <p>Prodi : Informatika</p>
+          <p>Semester : 4</p>
+        </div>
+      </section>
+
+      <section
+        style="
+          margin: 5px auto 5px auto;
+          text-align: center;
+          width: 80%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex ab
+          ullam voluptatum cum velit, fugit corrupti quas quos dolorum numquam,
+          voluptas repudiandae, laborum minus nulla iure obcaecati! Itaque
+          voluptate odio illum nulla quasi labore saepe exercitationem placeat
+          assumenda aperiam, a enim explicabo non laudantium ea libero iure
+          dicta magni dignissimos alias porro consequatur! Incidunt laboriosam
+          distinctio perferendis harum omnis deleniti nisi architecto magni
+          pariatur nam! Voluptatum voluptatibus illo cupiditate exercitationem
+          in! Repellendus error qui, eligendi quasi sint temporibus? Rerum
+          cupiditate commodi animi ipsa? Ratione tempora odit facilis commodi
+          sit ipsam optio modi perferendis adipisci odio minus eius deserunt
+          nemo facere iusto nisi eos saepe pariatur quasi, doloribus
+          consectetur. Officiis totam odio debitis esse numquam eaque illo. Ad
+          amet illo vero perspiciatis, eveniet asperiores ratione porro
+          praesentium reiciendis, consectetur facere unde? Aspernatur possimus
+          officiis tenetur facere dolore consequuntur rem. Eum ad eaque pariatur
+          eveniet sit placeat doloribus alias libero voluptatem!
+        </p>
+      </section>
+
+      <section style="display: flex; justify-content: space-around">
+        <div>
+          <h3>Mata Kuliah</h3>
+          <ul>
+            <li>Pemrograman Web</li>
+            <li>Jaringan Komputer</li>
+            <li>Desain Antarmuka</li>
+            <li>Rekayasa Perangkat Lunak</li>
+            <li>Kecerdasan Buatan</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Hobby</h3>
+          <ul>
+            <li>Basket</li>
+            <li>Programming</li>
+            <li>Gaming</li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="skill"
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+        "
+      >
+        <h2>Skill Set</h2>
+        <div
+          id="skillList"
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 10rem;
+            row-gap: 1rem;
+            text-align: center;
+          "
+        ></div>
+      </section>
+
+      <script>
+        const skill = ["HTML", "CSS", "JavaScript", "C-lang", "PHP", "Python"];
+        const skillList = document.getElementById("skillList");
+
+        skillList.innerHTML = skill
+          .map(
+            (skill) => `<span class="skillList-item" style="
+              border: 2px solid black;
+              border-radius: 10px;
+              background-color: gray;
+              color: white;
+              font-size: x-large;
+              padding: 20px;
+            ">${skill}</span>`
+          )
+          .join("");
+      </script>
+    </main>
+
+    <footer
+      style="
+        padding: 2rem;
+        background-color: rgb(50, 50, 57);
+        color: white;
+        margin: 40px auto auto 0px;
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+      "
+    >
+      <span>Uray Muhammad Rajsyafiq (23081010029)</span>
+      <div>
+        <a
+          href="https://instagram.com/uraymr"
+          target="_blank"
+          style="color: white; text-decoration: none; margin: 0 15px"
+        >
+          Instagram
+        </a>
+        |
+        <a
+          href="https://wa.me/628113491880"
+          target="_blank"
+          style="color: white; text-decoration: none; margin: 0 15px"
+        >
+          WhatsApp
+        </a>
+        |
+        <a
+          href="https://github.com/username"
+          target="_blank"
+          style="color: white; text-decoration: none; margin: 0 15px"
+        >
+          GitHub
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
