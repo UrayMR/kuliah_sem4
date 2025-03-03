@@ -1,0 +1,140 @@
+:root {
+  --navbar: #c7bcab;
+  --background: #101a36;
+  --textPrimary: #fff;
+  --textSecondary: rgb(20, 10, 10);
+  --card: #869aa6;
+  --contrast: #fef3e9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--navbar);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 0 3rem;
+}
+
+nav a {
+  color: var(--background);
+}
+
+#projects {
+  margin: 85px 15rem;
+}
+
+#projects {
+  color: white;
+}
+
+footer {
+  padding: 1rem 0;
+  background-color: var(--navbar);
+}
+
+.menu {
+  gap: 45px;
+  display: flex;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 3rem;
+  padding: 0 2.5rem;
+}
+
+#projects h2 {
+  font-size: 50px;
+}
+
+#cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 50px;
+  margin: auto;
+}
+
+.eclipse {
+  border-radius: 100%;
+  padding: 0.5rem;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectCard {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--card);
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.projectCard img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.projectCard h3 {
+  font-size: 30px;
+}
+
+.projectCard p {
+  color: #d8dde1;
+  font-size: 20px;
+  width: 80%;
+}
+
+.projectCard span {
+  font-size: 15px;
+}
+
+.buttonLoadProjects {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonLoadProjects h3 {
+  font-size: 30px;
+}
+
+.buttonLoadProjects button {
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}

@@ -1,0 +1,259 @@
+:root {
+  --navbar: #c7bcab;
+  --background: #101a36;
+  --textPrimary: #fff;
+  --textSecondary: rgb(20, 10, 10);
+  --card: #869aa6;
+  --contrast: #fef3e9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--navbar);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 0 3rem;
+}
+
+nav a {
+  color: var(--background);
+}
+
+#about,
+#experience,
+#skill,
+#projects {
+  margin: 85px 15rem;
+}
+
+#hero,
+#about,
+#experience,
+#skill,
+#projects {
+  color: white;
+}
+
+footer {
+  padding: 1rem 0;
+  background-color: var(--navbar);
+}
+
+.menu {
+  gap: 45px;
+  display: flex;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#hero h1 {
+  text-align: center;
+  font-size: 120px;
+}
+
+#hero img {
+  scale: 1.2;
+  position: absolute;
+}
+
+#hero h2 {
+  text-align: center;
+  font-size: 75px;
+  white-space: nowrap;
+}
+
+#about p {
+  font-size: 20px;
+  line-height: 2;
+  color: #a2adb4;
+}
+
+#about h2,
+#experience h2,
+#skill h2,
+#projects h2 {
+  font-size: 50px;
+}
+
+#about,
+#experience,
+#skill,
+#projects {
+  margin: 10rem 15rem;
+}
+
+.experienceCard {
+  padding: 10px 60px;
+  background-color: var(--card);
+  border-radius: 20px;
+}
+
+.experienceCard h3 {
+  font-size: 30px;
+}
+
+.experienceCard p {
+  font-size: 20px;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.skillCard svg {
+  width: 80px;
+}
+
+.eclipse {
+  border-radius: 100%;
+  padding: 0.5rem;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectCard {
+  display: flex;
+  gap: 20px;
+  padding: 25px 50px 200px;
+  background-color: var(--card);
+  border-radius: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.projectCard img {
+  width: 50%;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -30%);
+}
+
+.projectCard h3 {
+  font-size: 30px;
+}
+
+.projectCard p {
+  font-size: 20px;
+  width: 80%;
+}
+
+.projectCard span {
+  font-size: 15px;
+}
+
+.buttonLoadProjects {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonLoadProjects h3 {
+  font-size: 30px;
+}
+
+.buttonLoadProjects button {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+#contact {
+  background-color: #ebe0d6;
+}
+
+.contactContainer {
+  padding: 15rem 0;
+  margin: 0 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact h3 {
+  margin-top: auto;
+  font-size: 30px;
+}
+
+#contact p {
+  font-size: 20px;
+}
+
+#contact a {
+  font-size: 20px;
+}
+
+.contactDetail {
+  width: 40%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+}
+
+.contactForm input {
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: var(--background);
+  color: white;
+}
+
+.contactForm input#message {
+  padding: 15px 15px 50px 15px;
+}
+
+.contactForm label {
+  font-size: 18px;
+}
+
+.contactForm button {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: var(--background);
+  color: white;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 3rem;
+  padding: 0 2.5rem;
+}
